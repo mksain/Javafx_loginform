@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="868.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_login_form.FXMLDocumentController">
+   <children>
+      <AnchorPane layoutX="124.0" prefHeight="438.0" prefWidth="392.0" style="-fx-background-color: #000;">
+         <children>
+            <ImageView fitHeight="283.0" fitWidth="434.0" layoutX="55.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/manish%20sain%20it%20logo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btn_signin" layoutY="114.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="124.0" ripplerFill="#ffaa00" text="Sign In" />
+      <JFXButton fx:id="btn_signup" layoutY="149.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="124.0" ripplerFill="#ffaf00" text="Sign Up" />
+      <AnchorPane fx:id="pn_signup" layoutX="515.0" prefHeight="435.0" prefWidth="367.0" style="-fx-background-color: #fff;">
+         <children>
+            <JFXTextField fx:id="field2" focusColor="#ffaf00" layoutX="71.0" layoutY="195.0" prefHeight="25.0" prefWidth="248.0" promptText="email" />
+            <JFXTextField fx:id="field3" focusColor="#ffaf00" layoutX="71.0" layoutY="254.0" prefHeight="25.0" prefWidth="248.0" promptText="password" />
+            <JFXTextField fx:id="field1" focusColor="#ffaf00" layoutX="71.0" layoutY="143.0" prefHeight="25.0" prefWidth="248.0" promptText="user name" />
+            <Label layoutX="167.0" layoutY="71.0" text="SignUp" textFill="#ffaf00">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="sign_up" layoutX="180.0" layoutY="310.0" onAction="#handleButtonAction" text=" ">
+               <graphic>
+                  <FontAwesomeIconView fill="#ffaf00" glyphName="CHEVRON_CIRCLE_RIGHT" size="30" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="ggfh" fx:id="pn_signin" accessibleRole="PASSWORD_FIELD" layoutX="515.0" prefHeight="435.0" prefWidth="367.0" style="-fx-background-color: #fff;">
+         <children>
+            <JFXTextField fx:id="signfield2" accessibleRole="PASSWORD_FIELD" focusColor="#ffaf00" layoutX="86.0" layoutY="218.0" prefHeight="25.0" prefWidth="230.0" promptText="password" />
+            <JFXTextField fx:id="signfield1" focusColor="#ffaf00" layoutX="86.0" layoutY="165.0" prefHeight="25.0" prefWidth="230.0" promptText="Username" />
+            <Label layoutX="159.0" layoutY="67.0" text="Sign In" textFill="#ffaf00">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="sign_in" layoutX="170.0" layoutY="292.0" onAction="#handleButtonAction" text=" ">
+               <graphic>
+                  <FontAwesomeIconView fill="#ffaf00" glyphName="CHEVRON_CIRCLE_RIGHT" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_close" layoutX="332.0" onAction="#handleButtonAction" prefHeight="39.0" prefWidth="39.0" text=" ">
+               <graphic>
+                  <FontAwesomeIconView fill="#111010" glyphName="CLOSE" size="25" />
+               </graphic>
+            </JFXButton>
+            <FontAwesomeIconView glyphName="LOCK" layoutX="57.0" layoutY="242.0" size="15" />
+            <FontAwesomeIconView glyphName="USER" layoutX="58.0" layoutY="186.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
